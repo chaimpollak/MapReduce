@@ -9,10 +9,9 @@ function will also be matrix row records formatted as tuples. Each tuple will ha
 this can really be done in sql as follows:
 "select sum(valA*valB)
 from (
-select count as valA, term as colA, docid from frequency
-where docid ='10080_txt_crude'
-),( select count as valB, term as colB, docid from frequency
-where docid ='17035_txt_earn'
+select count as valA, term as colA, docid from frequency where docid ='10080_txt_crude'
+),( 
+select count as valB, term as colB, docid from frequency where docid ='17035_txt_earn'
 ) where colA = colB;"
 """
 
