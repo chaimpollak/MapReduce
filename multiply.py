@@ -6,6 +6,14 @@ a MapReduce function for a matrix multiplication of two matrices A and B in a
 sparse matrix format, where each record is of the form i, j, value. The output from the reduce
 function will also be matrix row records formatted as tuples. Each tuple will have the format
 (i, j, value) where each element is an integer.
+this can really be done in sql as follows:
+"select sum(valA*valB)
+from (
+select count as valA, term as colA, docid from frequency
+where docid ='10080_txt_crude'
+),( select count as valB, term as colB, docid from frequency
+where docid ='17035_txt_earn'
+) where colA = colB;"
 """
 
 mr = MapReduce.MapReduce()
