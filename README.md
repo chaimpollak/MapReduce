@@ -7,7 +7,7 @@ Created as an assignment for University of Washington's Intoduction course to Da
 
 offered on the coursera platform.
 
-The reposetory of this course can be found at https://github.com/uwescience/datasci_course_materials
+The repository for this course can be found at https://github.com/uwescience/datasci_course_materials
 
 =========
 
